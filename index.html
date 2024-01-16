@@ -11,15 +11,52 @@
         }
 
         header {
-            background-color: hsl(160,100%,50%,0.3);
+            background-color: aquamarine;
         }
 
         main {
-            background-color: slateblue;
+            background-color: darksalmon;
         }
 
         footer {
             background-color: wheat;
+        }
+
+        .nav-link {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            background-color: white;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+            margin: 0px 10px;
+        }
+
+        .nav-link a:hover {
+            background-color: rgb(74, 62, 62);
+            color: white;
+        }
+
+        .nav-link a:visited {
+            background-color: rgb(48, 183, 220);
+            color: white;
+        }
+
+        img {
+            background-color: aqua;
+        }
+
+        nav p {
+            background-color: blue;
+            color: #ffffff;
+            margin: 0px 0px 0px 10px;
+            padding: 0px 10px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -29,30 +66,28 @@
         <h1>Header</h1>
 
         <nav>
-            <img src="test-image.png" alt="1">
-            <ul>
-                <li title='nav-link'><a href="#">Home</a></li>
+            <img src="test-image.png" usemap="#shoes" alt="1">
+                <p>test para</p>
+            <ul class="nav-link">
+                <li title='nav-link'><a href="javascript:void(0);" onclick="alert('hello')">Home</a></li>
+                <li title='nav-link'><a href="#footer">Facebook</a></li>
+                <li title='nav-link'><a href="https://www.youtube.com">Youtube</a></li>
+                <li title='nav-link'><a href="https://www.twitter.com">Twitter</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Web-Content</h1>
-        <hr>
-        <p style="background-color: rgb(213, 227, 82);">Paragraph one</p>
-        <hr>
-        <p style="background-color: rgb(82, 227, 147);">Paragraph two</p>
-        <blockquote> <b>  <abbr title="Hyper text markup language">html</abbr> It is a long established fact </b> that <strong> a reader will be distracted by the readable content</strong> of a page when looking
-            at its layout. <i>The point of using</i> <sup>Lorem Ipsum</sup> is that it has a more-or-less normal distribution of letters,
-            as opposed to using 'Content here, content here', making it look like readable English. Many desktop
-            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour and the like)sdf.
-
-        </blockquote>
+    <main style="float: left; width: 50%;">
+        <p >parah 1</p>
+        <p style="float:left; margin: 0; background-color: brown;">parah 4</p>
+        <p>parah 3</p>
+        <p>parah 2</p>
     </main>
     <footer>
-        <h1>Footer</h1>
+        <h1 id="footer">Footer</h1>
     </footer>
+    <map name="shoes">
+        <area shape="circle" coords="100,200,250" onclick="alert('You clicked on a shoe')" alt="">
+    </map>
 </body>
 
 </html>
