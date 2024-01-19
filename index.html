@@ -15,7 +15,7 @@
             background-color: aquamarine;
         }
 
-        .banner{
+        .banner {
             height: 600px;
             background-image: url('/images/banners/Image-1.png');
             background-repeat: no-repeat;
@@ -67,9 +67,46 @@
             padding: 0px 10px;
             display: inline-block;
         }
-        .card picture img{
+
+        .card picture img {
             height: auto;
             width: 60%;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: separate;
+            border-radius: 10px;
+            padding: 14px;
+            border-spacing: 15px;
+        }
+
+        td,
+        th {
+            color: white;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        td:nth-child(even),
+        th:nth-child(odd) {
+            background-color: rgb(103, 137, 9);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(82, 153, 153);
+        }
+
+        tr:hover,
+        th:hover,
+        td:hover {
+            background-color: rgb(161, 109, 17);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(2, 89, 89);
         }
     </style>
 </head>
@@ -91,7 +128,8 @@
     </header>
     <main>
         <div class="banner">
-            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center;">Hello Guys! <br>
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center;">
+                Hello Guys! <br>
                 This is my new Gaming Channel</h1>
         </div>
         <h1>Html Picture Element </h1>
@@ -100,9 +138,41 @@
                 <source media="(min-width:1024px )" srcset="images/socks-5.png">
                 <source media="(max-width:1023px ) and (min-width:767px)" srcset="images/socks-4.png">
                 <source media="(min-width:400px )" srcset="images/socks-2.jpg">
-                <img src="images/socks-1.jpg" alt="Default Image not found of Picture Element" >
+                <img src="images/socks-1.jpg" alt="Default Image not found of Picture Element">
             </picture>
         </div>
+        <hr>
+        <h1>Now we are going to learn about html table Element</h1>
+        <table style="width: 100%;">
+            <caption>Fun Table</caption>
+            <!-- <colgroup>
+                <col span="3">
+                <col span="1" style="visibility: collapse;">
+            </colgroup> -->
+            <tr style="height: 70px;">
+                <th style="width: 20%;">Table Heading</th>
+                <th colspan="2">Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+            <tr>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+            </tr>
+            <tr>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+            </tr>
+            <tr>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+                <td>Table Cell Data</td>
+            </tr>
+        </table>
     </main>
     <footer>
         <h1 id="footer">Footer</h1>
