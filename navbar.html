@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Practice</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 80%;
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid black;
+        }
+
+        li {
+            float: left;
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: rgb(0, 174, 193);
+        }
+
+        .nav-links {
+            margin: 0px 344px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><img src="images/favicon.ico" alt=""></li>
+            <li style="padding: 0px;cursor: default;">
+                <nav>
+                    <ul class="nav-links" style="border: 0;">
+                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to Home page')">Home</a>
+                        </li>
+                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to Shop page')">Shop</a>
+                        </li>
+                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to About page')">About</a>
+                        </li>
+                        <li><a href="javascript:void(0);"
+                                onclick="alert('This is navigation to Contact Us page')">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><img src="images/cart.svg" alt="" srcset=""></li>
+        </ul>
+    </header>
+</body>
+
+</html>
