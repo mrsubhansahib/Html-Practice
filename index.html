@@ -14,25 +14,30 @@
         header {
             background-color: aquamarine;
         }
-        nav ul{
+
+        nav ul {
             overflow: hidden;
             background-color: black;
         }
-        nav a{
+
+        nav a {
             display: block;
             text-decoration: none;
             padding: 10px;
             color: #ffffff;
         }
-        nav a:hover{
+
+        nav a:hover {
             border: 1px solid white;
             padding: 9px;
 
         }
-        nav li{
+
+        nav li {
             float: left;
-            
+
         }
+
         .banner {
             height: 600px;
             background-image: url('/images/banners/Image-1.png');
@@ -48,7 +53,7 @@
         footer {
             background-color: wheat;
         }
-        
+
         img {
             background-color: aqua;
         }
@@ -118,10 +123,27 @@
                 <li><a href="javascript:void(0);" onclick="alert('This is About page')">About</a></li>
                 <li><a href="javascript:void(0);" onclick="alert('This is Pages page')">Pages</a></li>
                 <li><a href="javascript:void(0);" onclick="alert('This is Contact page')">Contact</a></li>
-            </ul>       
+            </ul>
         </nav>
     </header>
     <main>
+        <div class="display-Property">
+            <h1>
+                Display Block
+            </h1>
+            <address style="border: 1px solid red; text-align: center;">
+                this is a block-level element
+            </address>
+
+            <h1>
+                Display Inline
+            </h1>
+            <label for="">This is a label 1.</label>
+            <label for="">This <span style="color: white; background-color: black"> is a label</span> 2</label>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Enter You text Here" aria-placeholder="Enter You text Here"></textarea>
+            <object data="navbar.html" type="" width="550" height="200"></object>
+            <hr>
+        </div>
         <div class="list-element">
             <h1>Html Lists</h1>
             <h3>Unordered List</h3>
