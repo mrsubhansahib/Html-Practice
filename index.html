@@ -110,6 +110,18 @@
         .list-element ul {
             list-style-type: circle;
         }
+
+        .parent-div {
+            display: flex;
+            flex-flow:wrap;
+            height: 600px;
+            background-color: aqua;
+        }
+        .parent-div >div{
+            width: 300px;
+            height: 200px;
+        }
+
     </style>
 </head>
 
@@ -127,6 +139,39 @@
         </nav>
     </header>
     <main>
+        <div class="div-element">
+
+            <h1>Multiple DIV Elements</h1>
+            <div class="parent-div">
+            
+                <div style="background-color:#FFF4A3">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                </div>
+
+                <div style="background-color:#FFC0C7">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 600.000 inhabitants.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million inhabitants.</p>
+                </div>
+
+                <div style="background-color:#D9EEE1">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million inhabitants.</p>
+                </div>
+
+            </div>
+
+
+        </div>
         <div class="display-Property">
             <h1>
                 Display Block
@@ -138,10 +183,13 @@
             <h1>
                 Display Inline
             </h1>
+            <img src="images/test-image.png" alt="" style="width: 100px;" srcset=""><span>hello</span>
+
             <label for="">This is a label 1.</label>
             <label for="">This <span style="color: white; background-color: black"> is a label</span> 2</label>
-            <textarea name="" id="" cols="30" rows="2" placeholder="Enter You text Here" aria-placeholder="Enter You text Here"></textarea>
-            <object data="navbar.html" type="" width="550" height="200"></object>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Enter You text Here"
+                aria-placeholder="Enter You text Here"></textarea>
+            <object data="navbar.html" type="" width="650" height="200"></object>
             <hr>
         </div>
         <div class="list-element">
