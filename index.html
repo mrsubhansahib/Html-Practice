@@ -114,7 +114,7 @@
         .parent-div {
             display: flex;
             flex-flow:wrap;
-            height: 600px;
+            height: 300px;
             background-color: aqua;
         }
         .parent-div >div{
@@ -144,29 +144,25 @@
             <h1>Multiple DIV Elements</h1>
             <div class="parent-div">
             
-                <div style="background-color:#FFF4A3">
+                <div style="order: 2;flex-grow: 8;background-color:#FFF4A3">
                     <h2>London</h2>
                     <p>London is the capital city of England.</p>
                     <p>London has over 13 million inhabitants.</p>
                 </div>
 
-                <div style="background-color:#FFC0C7">
+                <div style="order:1;flex-grow: 4; ;background-color:#FFC0C7">
                     <h2>Oslo</h2>
                     <p>Oslo is the capital city of Norway.</p>
                     <p>Oslo has over 600.000 inhabitants.</p>
                 </div>
 
-                <div style="background-color:#D9EEE1">
+                <div style="order:3 ;flex-grow: 4;background-color:#D9EEE1">
                     <h2>Rome</h2>
                     <p>Rome is the capital city of Italy.</p>
                     <p>Rome has almost 3 million inhabitants.</p>
                 </div>
 
-                <div style="background-color:#D9EEE1">
-                    <h2>Rome</h2>
-                    <p>Rome is the capital city of Italy.</p>
-                    <p>Rome has almost 3 million inhabitants.</p>
-                </div>
+
 
             </div>
 

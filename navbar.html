@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Practice</title>
-    <style>
+    <!-- <style>
         body {
             margin: 0;
             padding: 0;
@@ -45,12 +45,72 @@
         .nav-links {
             margin: 0px 344px;
         }
+    </style> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            border-bottom:1px solid black ;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo, .buttons {
+            /* background-color: burlywood; */
+            flex: 10%;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav .links {
+            /* background-color: rgb(135, 222, 168); */
+            flex: 80%;
+        }
+        .nav-links{
+            display: flex;
+            /* background-color: blueviolet; */
+            width: 60%;
+            margin: auto;
+            padding: 0;
+            justify-content: center;
+        }
+        .nav-links li{
+            margin: 10px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <ul>
+        <nav>
+            <div class="logo"><img src="images/favicon.ico" alt=""></div>
+            <div class="links">
+                <ul class="nav-links" style="border: 0;">
+                    <li><a href="javascript:void(0);" onclick="alert('This is navigation to Home page')">Home</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="alert('This is navigation to Shop page')">Shop</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="alert('This is navigation to About page')">About</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="alert('This is navigation to Contact Us page')">Contact&nbsp;Us</a></li>
+                </ul>
+            </div>
+            <div class="buttons"><img src="images/cart.svg" alt="" srcset=""></div>
+        </nav>
+        <!-- <ul>
             <li><img src="images/favicon.ico" alt=""></li>
             <li style="padding: 0px;cursor: default;">
                 <nav>
@@ -67,7 +127,7 @@
                 </nav>
             </li>
             <li><img src="images/cart.svg" alt="" srcset=""></li>
-        </ul>
+        </ul> -->
     </header>
 </body>
 
