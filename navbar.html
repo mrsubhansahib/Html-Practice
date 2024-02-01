@@ -5,58 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Practice</title>
-    <!-- <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            width: 80%;
-            margin: auto;
-        }
-
-        ul {
-            list-style: none;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            border-bottom: 1px solid black;
-        }
-
-        li {
-            float: left;
-            display: block;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: black;
-            transition: 0.5s;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-            color: rgb(0, 174, 193);
-        }
-
-        .nav-links {
-            margin: 0px 344px;
-        }
-    </style> -->
     <style>
         body {
             margin: 0;
         }
 
-        nav{
+        nav {
             width: 80%;
             margin: auto;
             display: flex;
             align-items: center;
-            border-bottom:1px solid black ;
+
+            border-bottom: 1px solid black;
         }
 
         nav ul {
@@ -68,10 +29,12 @@
             color: black;
         }
 
-        .logo, .buttons {
+        .logo,
+        .buttons {
             /* background-color: burlywood; */
             flex: 10%;
             display: flex;
+            /* flex-wrap: wrap; */
             justify-content: center;
         }
 
@@ -79,7 +42,8 @@
             /* background-color: rgb(135, 222, 168); */
             flex: 80%;
         }
-        .nav-links{
+
+        .nav-links {
             display: flex;
             /* background-color: blueviolet; */
             width: 60%;
@@ -87,14 +51,79 @@
             padding: 0;
             justify-content: center;
         }
-        .nav-links li{
+
+        .nav-links li {
             margin: 10px;
+        }
+
+        .nav-svg,
+        #mobileNavLinks {
+            display: none;
+        }
+
+        @media (max-width:700px) {
+
+            /*             
+            .logo,.buttons{
+                flex: 50%;
+            } */
+            nav {
+                padding: 10px 0px;
+            }
+
+            .nav-links,
+            .cart-svg {
+                display: none;
+            }
+
+            .nav-svg {
+                display: block;
+            }
+
+            #mobileNavLinks {
+                position: relative;
+
+            }
+
+            #mobileNavLinks>ul {
+                background: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                list-style: none;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 520px;
+                justify-content: center;
+
+            }
+
+            #mobileNavLinks>ul>li>a {
+                text-decoration: none;
+                color: white;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
+        <div id="mobileNavLinks">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="alert('This is navigation to Home page')">Home</a>
+                </li>
+                <li><a href="javascript:void(0);" onclick="alert('This is navigation to Shop page')">Shop</a>
+                </li>
+                <li><a href="javascript:void(0);" onclick="alert('This is navigation to About page')">About</a>
+                </li>
+                <li><a href="javascript:void(0);"
+                        onclick="alert('This is navigation to Contact Us page')">Contact&nbsp;Us</a></li>
+            </ul>
+        </div>
         <nav>
             <div class="logo"><img src="images/favicon.ico" alt=""></div>
             <div class="links">
@@ -105,29 +134,17 @@
                     </li>
                     <li><a href="javascript:void(0);" onclick="alert('This is navigation to About page')">About</a>
                     </li>
-                    <li><a href="javascript:void(0);" onclick="alert('This is navigation to Contact Us page')">Contact&nbsp;Us</a></li>
+                    <li><a href="javascript:void(0);"
+                            onclick="alert('This is navigation to Contact Us page')">Contact&nbsp;Us</a></li>
                 </ul>
             </div>
-            <div class="buttons"><img src="images/cart.svg" alt="" srcset=""></div>
+            <div class="buttons">
+                <img src="images/cart.svg" alt="" srcset="" class="cart-svg">
+                <img src="images/cart.svg" alt="" srcset="" class="nav-svg"
+                    onclick="document.getElementById('mobileNavLinks').style.display='block';">
+            </div>
         </nav>
-        <!-- <ul>
-            <li><img src="images/favicon.ico" alt=""></li>
-            <li style="padding: 0px;cursor: default;">
-                <nav>
-                    <ul class="nav-links" style="border: 0;">
-                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to Home page')">Home</a>
-                        </li>
-                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to Shop page')">Shop</a>
-                        </li>
-                        <li><a href="javascript:void(0);" onclick="alert('This is navigation to About page')">About</a>
-                        </li>
-                        <li><a href="javascript:void(0);"
-                                onclick="alert('This is navigation to Contact Us page')">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </li>
-            <li><img src="images/cart.svg" alt="" srcset=""></li>
-        </ul> -->
+
     </header>
 </body>
 
